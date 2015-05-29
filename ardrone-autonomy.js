@@ -21,6 +21,7 @@ var main = function () {
 
     internals.mission
       .zero()
+      .takeoff()
       .altitude(0.5)     // Climb to altitude = 1 meter
       .hover(5000)
       .forward(2)
