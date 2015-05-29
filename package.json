@@ -1,0 +1,14 @@
+{
+  "name": "argate",
+  "description": "argate",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index",
+  "engines": {
+    "node": ">=0.10.x"
+  },
+  "dependencies": {
+    "ardrone-autonomy": "x.x.x",
+    "hoek": "x.x.x"
+  }
+}

@@ -19,17 +19,16 @@ var log = function (s) {
 
 var main = function () {
 
-    internals.mission.takeoff()
-           .hover(5000)
-           .zero()          // Sets the current state as the reference 
-           .altitude(1)     // Climb to altitude = 1 meter 
-           .forward(1)   
-           .right(1)     
-           .backward(1) 
-           .left(1)
-           .hover(1000)     // Hover in place for 1 second 
-           .land();
-   
+    internals.mission
+      .zero()
+      .altitude(0.5)     // Climb to altitude = 1 meter
+      .hover(5000)
+      .forward(2)
+      .hover(1000)     // Hover in place for 1 second
+      .backward(2)
+      .hover(1000)     // Hover in place for 1 second
+      .land();
+
     internals.mission.run(function (err, result) {
 
         if (err) {
